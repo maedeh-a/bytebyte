@@ -1,0 +1,3366 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>ByteByteGo | Technical Interview Prep</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css"
+    />
+    <link rel="stylesheet" href="./aec35e2aa86e9ef0.css" />
+    <link rel="stylesheet" href="./9046ffb361b752ee.css" />
+    <style>
+      @media (min-width: 840px) {
+        .style_introRight__21oEi.mobile {
+          display: none;
+        }
+      }
+      @media (max-width: 840px) {
+        .style_introRight__21oEi:not(.style_introRight__21oEi:not(.mobile)) {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="__next" data-reactroot="">
+      <section class="ant-layout">
+        <section class="ant-layout">
+          <header class="ant-layout-header style_header__xmG1P">
+            <div class="style_headerWrap__vl6gU">
+              <div>
+                <a href="/"
+                  ><span class="style_logo__55_s9"
+                    ><span
+                      style="
+                        box-sizing: border-box;
+                        display: inline-block;
+                        overflow: hidden;
+                        width: initial;
+                        height: initial;
+                        background: none;
+                        opacity: 1;
+                        border: 0px;
+                        margin: 0px;
+                        padding: 0px;
+                        position: relative;
+                        max-width: 100%;
+                      "
+                      ><span
+                        style="
+                          box-sizing: border-box;
+                          display: block;
+                          width: initial;
+                          height: initial;
+                          background: none;
+                          opacity: 1;
+                          border: 0px;
+                          margin: 0px;
+                          padding: 0px;
+                          max-width: 100%;
+                        "
+                        ><img
+                          style="
+                            display: block;
+                            max-width: 100%;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                          "
+                          alt=""
+                          aria-hidden="true"
+                          src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27167%27%20height=%2730%27/%3e" /></span
+                      ><img
+                        alt=""
+                        src="/image/logo.svg"
+                        decoding="async"
+                        data-nimg="intrinsic"
+                        style="
+                          position: absolute;
+                          inset: 0px;
+                          box-sizing: border-box;
+                          padding: 0px;
+                          border: medium;
+                          margin: auto;
+                          display: block;
+                          width: 0px;
+                          height: 0px;
+                          min-width: 100%;
+                          max-width: 100%;
+                          min-height: 100%;
+                          max-height: 100%;
+                        " /></span></span
+                ></a>
+              </div>
+              <div class="style_headerRight__P9b3e">
+                <a class="style_newsletterBtn__X_S0w">Products</a
+                ><a
+                  class="style_newsletterBtn__X_S0w"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Newsletter</a
+                ><a
+                  class="style_newsletterBtn__X_S0w"
+                  target="_blank"
+                  rel="noreferrer"
+                  >YouTube</a
+                ><a style="font-weight: 600" href="/login">Login</a>
+              </div>
+            </div>
+          </header>
+          <main
+            class="ant-layout-content"
+            style="
+              min-width: 400px;
+              background: rgb(255, 255, 255);
+              border-radius: 0px;
+              margin-top: 90px;
+            "
+          >
+            <div class="style_container__ID5fc">
+              <header class="style_banner__TgRIS">
+                <div class="style_baseInfo__6rVK5">
+                  <h1>System Design Interview</h1>
+                  <p>Alex Xu · Bestselling author</p>
+                  <div>
+                    <span
+                      >30 Lessons
+                      <div
+                        class="ant-divider ant-divider-vertical"
+                        role="separator"
+                      ></div>
+                      <div class="ant-statistic" style="display: inline-block">
+                        <div
+                          style="font-size: 18px; margin-right: 4px"
+                          class="ant-statistic-content"
+                        >
+                          <span class="ant-statistic-content-value"
+                            ><span class="ant-statistic-content-value-int"
+                              >10,000</span
+                            ></span
+                          >
+                        </div>
+                      </div>
+                      Students</span
+                    ><time>Last Modified：2022.03.01</time>
+                  </div>
+                </div>
+              </header>
+              <div class="style_introContent__MpsZw">
+                <div class="style_introLeft__w1MD6">
+                  <div class="style_description__YjbXR">
+                    <h3>
+                      <span
+                        style="
+                          box-sizing: border-box;
+                          display: inline-block;
+                          overflow: hidden;
+                          width: initial;
+                          height: initial;
+                          background: none;
+                          opacity: 1;
+                          border: 0px;
+                          margin: 0px;
+                          padding: 0px;
+                          position: relative;
+                          max-width: 100%;
+                        "
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: block;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            max-width: 100%;
+                          "
+                          ><img
+                            style="
+                              display: block;
+                              max-width: 100%;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                            "
+                            alt=""
+                            aria-hidden="true"
+                            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2724%27%20height=%2724%27/%3e" /></span
+                        ><img
+                          alt=""
+                          src="/image/intro-check.png"
+                          decoding="async"
+                          data-nimg="intrinsic"
+                          style="
+                            position: absolute;
+                            inset: 0px;
+                            box-sizing: border-box;
+                            padding: 0px;
+                            border: medium;
+                            margin: auto;
+                            display: block;
+                            width: 0px;
+                            height: 0px;
+                            min-width: 100%;
+                            max-width: 100%;
+                            min-height: 100%;
+                            max-height: 100%;
+                          "
+                      /></span>
+                      <div style="margin-left: 8px">You'll learn</div>
+                    </h3>
+                    <ul>
+                      <li>
+                        A 4-step framework for solving any system design
+                        interview question.
+                      </li>
+                      <li>
+                        An insider’s take on what interviewers really look for
+                        and why.
+                      </li>
+                      <li>
+                        26 real system design interview questions with detailed
+                        solutions.
+                      </li>
+                      <li>
+                        500+ diagrams to visually explain how different systems
+                        work.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="style_introRight__21oEi mobile">
+                    <h2>Instructors</h2>
+                    <div class="style_author__vWyn8">
+                      <header>
+                        <div class="style_profile__XJ_Hc">
+                          <span
+                            style="
+                              box-sizing: border-box;
+                              display: inline-block;
+                              overflow: hidden;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              position: relative;
+                              max-width: 100%;
+                            "
+                            ><span
+                              style="
+                                box-sizing: border-box;
+                                display: block;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                                max-width: 100%;
+                              "
+                              ><img
+                                style="
+                                  display: block;
+                                  max-width: 100%;
+                                  width: initial;
+                                  height: initial;
+                                  background: none;
+                                  opacity: 1;
+                                  border: 0px;
+                                  margin: 0px;
+                                  padding: 0px;
+                                "
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2764%27%20height=%2764%27/%3e" /></span
+                            ><img
+                              alt=""
+                              src="/image/team-member-1.png"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style="
+                                position: absolute;
+                                inset: 0px;
+                                box-sizing: border-box;
+                                padding: 0px;
+                                border: medium;
+                                margin: auto;
+                                display: block;
+                                width: 0px;
+                                height: 0px;
+                                min-width: 100%;
+                                max-width: 100%;
+                                min-height: 100%;
+                                max-height: 100%;
+                              "
+                          /></span>
+                        </div>
+                        <div>
+                          <strong>Alex Xu</strong
+                          ><span>Founder of ByteByteGo, Ex-Twitter</span>
+                        </div>
+                      </header>
+                      <p>
+                        Alex Xu is the CEO and founder of ByteByteGo. His book,
+                        System Design Interview - An Insider’s Guide, is an
+                        Amazon bestseller, which has been translated into six
+                        languages. He has worked at Twitter, Apple, and Zynga.
+                      </p>
+                    </div>
+                    <div class="style_author__vWyn8">
+                      <header>
+                        <div class="style_profile__XJ_Hc">
+                          <span
+                            style="
+                              box-sizing: border-box;
+                              display: inline-block;
+                              overflow: hidden;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              position: relative;
+                              max-width: 100%;
+                            "
+                            ><span
+                              style="
+                                box-sizing: border-box;
+                                display: block;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                                max-width: 100%;
+                              "
+                              ><img
+                                style="
+                                  display: block;
+                                  max-width: 100%;
+                                  width: initial;
+                                  height: initial;
+                                  background: none;
+                                  opacity: 1;
+                                  border: 0px;
+                                  margin: 0px;
+                                  padding: 0px;
+                                "
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2764%27%20height=%2764%27/%3e" /></span
+                            ><img
+                              alt=""
+                              src="/image/team-member-2.png"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style="
+                                position: absolute;
+                                inset: 0px;
+                                box-sizing: border-box;
+                                padding: 0px;
+                                border: medium;
+                                margin: auto;
+                                display: block;
+                                width: 0px;
+                                height: 0px;
+                                min-width: 100%;
+                                max-width: 100%;
+                                min-height: 100%;
+                                max-height: 100%;
+                              "
+                          /></span>
+                        </div>
+                        <div>
+                          <strong>Sahn Lam</strong
+                          ><span>Staff Engineer at Discord</span>
+                        </div>
+                      </header>
+                      <p>
+                        Sahn Lam is a software engineer with decades of
+                        experience in building scalable systems at high-growth
+                        companies like Discord, Zynga, and NetApp. He has
+                        designed, built, operated, and optimized many
+                        interesting distributed systems used by millions of
+                        users.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="style_description__YjbXR">
+                    <h3>
+                      <span
+                        style="
+                          box-sizing: border-box;
+                          display: inline-block;
+                          overflow: hidden;
+                          width: initial;
+                          height: initial;
+                          background: none;
+                          opacity: 1;
+                          border: 0px;
+                          margin: 0px;
+                          padding: 0px;
+                          position: relative;
+                          max-width: 100%;
+                        "
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: block;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            max-width: 100%;
+                          "
+                          ><img
+                            style="
+                              display: block;
+                              max-width: 100%;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                            "
+                            alt=""
+                            aria-hidden="true"
+                            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2724%27%20height=%2724%27/%3e" /></span
+                        ><img
+                          alt=""
+                          src="/image/intro-check.png"
+                          decoding="async"
+                          data-nimg="intrinsic"
+                          style="
+                            position: absolute;
+                            inset: 0px;
+                            box-sizing: border-box;
+                            padding: 0px;
+                            border: medium;
+                            margin: auto;
+                            display: block;
+                            width: 0px;
+                            height: 0px;
+                            min-width: 100%;
+                            max-width: 100%;
+                            min-height: 100%;
+                            max-height: 100%;
+                          "
+                      /></span>
+                      <div style="margin-left: 8px">Learn the fundamentals</div>
+                    </h3>
+                    <div>
+                      <span
+                        style="
+                          box-sizing: border-box;
+                          display: inline-block;
+                          overflow: hidden;
+                          width: initial;
+                          height: initial;
+                          background: none;
+                          opacity: 1;
+                          border: 0px;
+                          margin: 0px;
+                          padding: 0px;
+                          position: relative;
+                          max-width: 100%;
+                        "
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: block;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            max-width: 100%;
+                          "
+                          ><img
+                            style="
+                              display: block;
+                              max-width: 100%;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                            "
+                            alt=""
+                            aria-hidden="true"
+                            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%272361%27%20height=%271377%27/%3e" /></span
+                        ><img
+                          alt="course intro flow"
+                          src="/image/design-a-payment-system.png"
+                          decoding="async"
+                          data-nimg="intrinsic"
+                          style="
+                            position: absolute;
+                            inset: 0px;
+                            box-sizing: border-box;
+                            padding: 0px;
+                            border: medium;
+                            margin: auto;
+                            display: block;
+                            width: 0px;
+                            height: 0px;
+                            min-width: 100%;
+                            max-width: 100%;
+                            min-height: 100%;
+                            max-height: 100%;
+                          "
+                      /></span>
+                    </div>
+                  </div>
+                  <div class="style_description__YjbXR">
+                    <h3>
+                      <span
+                        style="
+                          box-sizing: border-box;
+                          display: inline-block;
+                          overflow: hidden;
+                          width: initial;
+                          height: initial;
+                          background: none;
+                          opacity: 1;
+                          border: 0px;
+                          margin: 0px;
+                          padding: 0px;
+                          position: relative;
+                          max-width: 100%;
+                        "
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: block;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            max-width: 100%;
+                          "
+                          ><img
+                            style="
+                              display: block;
+                              max-width: 100%;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                            "
+                            alt=""
+                            aria-hidden="true"
+                            src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2724%27%20height=%2724%27/%3e" /></span
+                        ><img
+                          alt=""
+                          src="/image/intro-catalog.png"
+                          decoding="async"
+                          data-nimg="intrinsic"
+                          style="
+                            position: absolute;
+                            inset: 0px;
+                            box-sizing: border-box;
+                            padding: 0px;
+                            border: medium;
+                            margin: auto;
+                            display: block;
+                            width: 0px;
+                            height: 0px;
+                            min-width: 100%;
+                            max-width: 100%;
+                            min-height: 100%;
+                            max-height: 100%;
+                          "
+                      /></span>
+                      <div style="margin-left: 8px">Course Contents</div>
+                    </h3>
+                    <ul class="style_catalog__5KHx8">
+                      <li>
+                        <span class="style_cataTitle__nzDnz"
+                          ><i>01</i>
+                          <div
+                            class="ant-divider ant-divider-vertical"
+                            role="separator"
+                          ></div>
+                          Foreword</span
+                        ><span class="style_freeIcon__Ala2D"
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: inline-block;
+                              overflow: hidden;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              position: relative;
+                              max-width: 100%;
+                            "
+                            ><span
+                              style="
+                                box-sizing: border-box;
+                                display: block;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                                max-width: 100%;
+                              "
+                              ><img
+                                style="
+                                  display: block;
+                                  max-width: 100%;
+                                  width: initial;
+                                  height: initial;
+                                  background: none;
+                                  opacity: 1;
+                                  border: 0px;
+                                  margin: 0px;
+                                  padding: 0px;
+                                "
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2738%27%20height=%2718%27/%3e" /></span
+                            ><img
+                              alt=""
+                              src="/image/freeicon.png"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style="
+                                position: absolute;
+                                inset: 0px;
+                                box-sizing: border-box;
+                                padding: 0px;
+                                border: medium;
+                                margin: auto;
+                                display: block;
+                                width: 0px;
+                                height: 0px;
+                                min-width: 100%;
+                                max-width: 100%;
+                                min-height: 100%;
+                                max-height: 100%;
+                              " /></span
+                        ></span>
+                      </li>
+                      <li>
+                        <span class="style_cataTitle__nzDnz"
+                          ><i>02</i>
+                          <div
+                            class="ant-divider ant-divider-vertical"
+                            role="separator"
+                          ></div>
+                          Join the Community</span
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: inline-block;
+                            overflow: hidden;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            position: relative;
+                            max-width: 100%;
+                          "
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: block;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              max-width: 100%;
+                            "
+                            ><img
+                              style="
+                                display: block;
+                                max-width: 100%;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                              "
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2716%27%20height=%2718%27/%3e" /></span
+                          ><img
+                            alt=""
+                            src="/image/intro-lock.png"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style="
+                              position: absolute;
+                              inset: 0px;
+                              box-sizing: border-box;
+                              padding: 0px;
+                              border: medium;
+                              margin: auto;
+                              display: block;
+                              width: 0px;
+                              height: 0px;
+                              min-width: 100%;
+                              max-width: 100%;
+                              min-height: 100%;
+                              max-height: 100%;
+                            "
+                        /></span>
+                      </li>
+                      <li>
+                        <span class="style_cataTitle__nzDnz"
+                          ><i>03</i>
+                          <div
+                            class="ant-divider ant-divider-vertical"
+                            role="separator"
+                          ></div>
+                          Scale From Zero To Millions Of Users</span
+                        ><span class="style_freeIcon__Ala2D"
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: inline-block;
+                              overflow: hidden;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              position: relative;
+                              max-width: 100%;
+                            "
+                            ><span
+                              style="
+                                box-sizing: border-box;
+                                display: block;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                                max-width: 100%;
+                              "
+                              ><img
+                                style="
+                                  display: block;
+                                  max-width: 100%;
+                                  width: initial;
+                                  height: initial;
+                                  background: none;
+                                  opacity: 1;
+                                  border: 0px;
+                                  margin: 0px;
+                                  padding: 0px;
+                                "
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2738%27%20height=%2718%27/%3e" /></span
+                            ><img
+                              alt=""
+                              src="/image/freeicon.png"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style="
+                                position: absolute;
+                                inset: 0px;
+                                box-sizing: border-box;
+                                padding: 0px;
+                                border: medium;
+                                margin: auto;
+                                display: block;
+                                width: 0px;
+                                height: 0px;
+                                min-width: 100%;
+                                max-width: 100%;
+                                min-height: 100%;
+                                max-height: 100%;
+                              " /></span
+                        ></span>
+                      </li>
+                      <li>
+                        <span class="style_cataTitle__nzDnz"
+                          ><i>04</i>
+                          <div
+                            class="ant-divider ant-divider-vertical"
+                            role="separator"
+                          ></div>
+                          Back-of-the-envelope Estimation</span
+                        ><span class="style_freeIcon__Ala2D"
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: inline-block;
+                              overflow: hidden;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              position: relative;
+                              max-width: 100%;
+                            "
+                            ><span
+                              style="
+                                box-sizing: border-box;
+                                display: block;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                                max-width: 100%;
+                              "
+                              ><img
+                                style="
+                                  display: block;
+                                  max-width: 100%;
+                                  width: initial;
+                                  height: initial;
+                                  background: none;
+                                  opacity: 1;
+                                  border: 0px;
+                                  margin: 0px;
+                                  padding: 0px;
+                                "
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2738%27%20height=%2718%27/%3e" /></span
+                            ><img
+                              alt=""
+                              src="/image/freeicon.png"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style="
+                                position: absolute;
+                                inset: 0px;
+                                box-sizing: border-box;
+                                padding: 0px;
+                                border: medium;
+                                margin: auto;
+                                display: block;
+                                width: 0px;
+                                height: 0px;
+                                min-width: 100%;
+                                max-width: 100%;
+                                min-height: 100%;
+                                max-height: 100%;
+                              " /></span
+                        ></span>
+                      </li>
+                      <li>
+                        <span class="style_cataTitle__nzDnz"
+                          ><i>05</i>
+                          <div
+                            class="ant-divider ant-divider-vertical"
+                            role="separator"
+                          ></div>
+                          A Framework For System Design Interviews</span
+                        ><span class="style_freeIcon__Ala2D"
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: inline-block;
+                              overflow: hidden;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              position: relative;
+                              max-width: 100%;
+                            "
+                            ><span
+                              style="
+                                box-sizing: border-box;
+                                display: block;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                                max-width: 100%;
+                              "
+                              ><img
+                                style="
+                                  display: block;
+                                  max-width: 100%;
+                                  width: initial;
+                                  height: initial;
+                                  background: none;
+                                  opacity: 1;
+                                  border: 0px;
+                                  margin: 0px;
+                                  padding: 0px;
+                                "
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2738%27%20height=%2718%27/%3e" /></span
+                            ><img
+                              alt=""
+                              src="/image/freeicon.png"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style="
+                                position: absolute;
+                                inset: 0px;
+                                box-sizing: border-box;
+                                padding: 0px;
+                                border: medium;
+                                margin: auto;
+                                display: block;
+                                width: 0px;
+                                height: 0px;
+                                min-width: 100%;
+                                max-width: 100%;
+                                min-height: 100%;
+                                max-height: 100%;
+                              " /></span
+                        ></span>
+                      </li>
+                      <li>
+                        <span class="style_cataTitle__nzDnz"
+                          ><i>06</i>
+                          <div
+                            class="ant-divider ant-divider-vertical"
+                            role="separator"
+                          ></div>
+                          Design A Rate Limiter</span
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: inline-block;
+                            overflow: hidden;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            position: relative;
+                            max-width: 100%;
+                          "
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: block;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              max-width: 100%;
+                            "
+                            ><img
+                              style="
+                                display: block;
+                                max-width: 100%;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                              "
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2716%27%20height=%2718%27/%3e" /></span
+                          ><img
+                            alt=""
+                            src="/image/intro-lock.png"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style="
+                              position: absolute;
+                              inset: 0px;
+                              box-sizing: border-box;
+                              padding: 0px;
+                              border: medium;
+                              margin: auto;
+                              display: block;
+                              width: 0px;
+                              height: 0px;
+                              min-width: 100%;
+                              max-width: 100%;
+                              min-height: 100%;
+                              max-height: 100%;
+                            "
+                        /></span>
+                      </li>
+                      <li>
+                        <span class="style_cataTitle__nzDnz"
+                          ><i>07</i>
+                          <div
+                            class="ant-divider ant-divider-vertical"
+                            role="separator"
+                          ></div>
+                          Design Consistent Hashing</span
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: inline-block;
+                            overflow: hidden;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            position: relative;
+                            max-width: 100%;
+                          "
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: block;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              max-width: 100%;
+                            "
+                            ><img
+                              style="
+                                display: block;
+                                max-width: 100%;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                              "
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2716%27%20height=%2718%27/%3e" /></span
+                          ><img
+                            alt=""
+                            src="/image/intro-lock.png"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style="
+                              position: absolute;
+                              inset: 0px;
+                              box-sizing: border-box;
+                              padding: 0px;
+                              border: medium;
+                              margin: auto;
+                              display: block;
+                              width: 0px;
+                              height: 0px;
+                              min-width: 100%;
+                              max-width: 100%;
+                              min-height: 100%;
+                              max-height: 100%;
+                            "
+                        /></span>
+                      </li>
+                      <li>
+                        <span class="style_cataTitle__nzDnz"
+                          ><i>08</i>
+                          <div
+                            class="ant-divider ant-divider-vertical"
+                            role="separator"
+                          ></div>
+                          Design A Key-value Store</span
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: inline-block;
+                            overflow: hidden;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            position: relative;
+                            max-width: 100%;
+                          "
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: block;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              max-width: 100%;
+                            "
+                            ><img
+                              style="
+                                display: block;
+                                max-width: 100%;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                              "
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2716%27%20height=%2718%27/%3e" /></span
+                          ><img
+                            alt=""
+                            src="/image/intro-lock.png"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style="
+                              position: absolute;
+                              inset: 0px;
+                              box-sizing: border-box;
+                              padding: 0px;
+                              border: medium;
+                              margin: auto;
+                              display: block;
+                              width: 0px;
+                              height: 0px;
+                              min-width: 100%;
+                              max-width: 100%;
+                              min-height: 100%;
+                              max-height: 100%;
+                            "
+                        /></span>
+                      </li>
+                      <li>
+                        <span class="style_cataTitle__nzDnz"
+                          ><i>09</i>
+                          <div
+                            class="ant-divider ant-divider-vertical"
+                            role="separator"
+                          ></div>
+                          Design A Unique ID Generator In Distributed
+                          Systems</span
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: inline-block;
+                            overflow: hidden;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            position: relative;
+                            max-width: 100%;
+                          "
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: block;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              max-width: 100%;
+                            "
+                            ><img
+                              style="
+                                display: block;
+                                max-width: 100%;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                              "
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2716%27%20height=%2718%27/%3e" /></span
+                          ><img
+                            alt=""
+                            src="/image/intro-lock.png"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style="
+                              position: absolute;
+                              inset: 0px;
+                              box-sizing: border-box;
+                              padding: 0px;
+                              border: medium;
+                              margin: auto;
+                              display: block;
+                              width: 0px;
+                              height: 0px;
+                              min-width: 100%;
+                              max-width: 100%;
+                              min-height: 100%;
+                              max-height: 100%;
+                            "
+                        /></span>
+                      </li>
+                      <li>
+                        <span class="style_cataTitle__nzDnz"
+                          ><i>10</i>
+                          <div
+                            class="ant-divider ant-divider-vertical"
+                            role="separator"
+                          ></div>
+                          Design A URL Shortener</span
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: inline-block;
+                            overflow: hidden;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            position: relative;
+                            max-width: 100%;
+                          "
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: block;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              max-width: 100%;
+                            "
+                            ><img
+                              style="
+                                display: block;
+                                max-width: 100%;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                              "
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2716%27%20height=%2718%27/%3e" /></span
+                          ><img
+                            alt=""
+                            src="/image/intro-lock.png"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style="
+                              position: absolute;
+                              inset: 0px;
+                              box-sizing: border-box;
+                              padding: 0px;
+                              border: medium;
+                              margin: auto;
+                              display: block;
+                              width: 0px;
+                              height: 0px;
+                              min-width: 100%;
+                              max-width: 100%;
+                              min-height: 100%;
+                              max-height: 100%;
+                            "
+                        /></span>
+                      </li>
+                      <li>
+                        <span class="style_cataTitle__nzDnz"
+                          ><i>11</i>
+                          <div
+                            class="ant-divider ant-divider-vertical"
+                            role="separator"
+                          ></div>
+                          Design A Web Crawler</span
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: inline-block;
+                            overflow: hidden;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            position: relative;
+                            max-width: 100%;
+                          "
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: block;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              max-width: 100%;
+                            "
+                            ><img
+                              style="
+                                display: block;
+                                max-width: 100%;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                              "
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2716%27%20height=%2718%27/%3e" /></span
+                          ><img
+                            alt=""
+                            src="/image/intro-lock.png"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style="
+                              position: absolute;
+                              inset: 0px;
+                              box-sizing: border-box;
+                              padding: 0px;
+                              border: medium;
+                              margin: auto;
+                              display: block;
+                              width: 0px;
+                              height: 0px;
+                              min-width: 100%;
+                              max-width: 100%;
+                              min-height: 100%;
+                              max-height: 100%;
+                            "
+                        /></span>
+                      </li>
+                      <li>
+                        <span class="style_cataTitle__nzDnz"
+                          ><i>12</i>
+                          <div
+                            class="ant-divider ant-divider-vertical"
+                            role="separator"
+                          ></div>
+                          Design A Notification System</span
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: inline-block;
+                            overflow: hidden;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            position: relative;
+                            max-width: 100%;
+                          "
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: block;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              max-width: 100%;
+                            "
+                            ><img
+                              style="
+                                display: block;
+                                max-width: 100%;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                              "
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2716%27%20height=%2718%27/%3e" /></span
+                          ><img
+                            alt=""
+                            src="/image/intro-lock.png"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style="
+                              position: absolute;
+                              inset: 0px;
+                              box-sizing: border-box;
+                              padding: 0px;
+                              border: medium;
+                              margin: auto;
+                              display: block;
+                              width: 0px;
+                              height: 0px;
+                              min-width: 100%;
+                              max-width: 100%;
+                              min-height: 100%;
+                              max-height: 100%;
+                            "
+                        /></span>
+                      </li>
+                      <li>
+                        <span class="style_cataTitle__nzDnz"
+                          ><i>13</i>
+                          <div
+                            class="ant-divider ant-divider-vertical"
+                            role="separator"
+                          ></div>
+                          Design A News Feed System</span
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: inline-block;
+                            overflow: hidden;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            position: relative;
+                            max-width: 100%;
+                          "
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: block;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              max-width: 100%;
+                            "
+                            ><img
+                              style="
+                                display: block;
+                                max-width: 100%;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                              "
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2716%27%20height=%2718%27/%3e" /></span
+                          ><img
+                            alt=""
+                            src="/image/intro-lock.png"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style="
+                              position: absolute;
+                              inset: 0px;
+                              box-sizing: border-box;
+                              padding: 0px;
+                              border: medium;
+                              margin: auto;
+                              display: block;
+                              width: 0px;
+                              height: 0px;
+                              min-width: 100%;
+                              max-width: 100%;
+                              min-height: 100%;
+                              max-height: 100%;
+                            "
+                        /></span>
+                      </li>
+                      <li>
+                        <span class="style_cataTitle__nzDnz"
+                          ><i>14</i>
+                          <div
+                            class="ant-divider ant-divider-vertical"
+                            role="separator"
+                          ></div>
+                          Design A Chat System</span
+                        ><span class="style_freeIcon__Ala2D"
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: inline-block;
+                              overflow: hidden;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              position: relative;
+                              max-width: 100%;
+                            "
+                            ><span
+                              style="
+                                box-sizing: border-box;
+                                display: block;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                                max-width: 100%;
+                              "
+                              ><img
+                                style="
+                                  display: block;
+                                  max-width: 100%;
+                                  width: initial;
+                                  height: initial;
+                                  background: none;
+                                  opacity: 1;
+                                  border: 0px;
+                                  margin: 0px;
+                                  padding: 0px;
+                                "
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2738%27%20height=%2718%27/%3e" /></span
+                            ><img
+                              alt=""
+                              src="/image/freeicon.png"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style="
+                                position: absolute;
+                                inset: 0px;
+                                box-sizing: border-box;
+                                padding: 0px;
+                                border: medium;
+                                margin: auto;
+                                display: block;
+                                width: 0px;
+                                height: 0px;
+                                min-width: 100%;
+                                max-width: 100%;
+                                min-height: 100%;
+                                max-height: 100%;
+                              " /></span
+                        ></span>
+                      </li>
+                      <li>
+                        <span class="style_cataTitle__nzDnz"
+                          ><i>15</i>
+                          <div
+                            class="ant-divider ant-divider-vertical"
+                            role="separator"
+                          ></div>
+                          Design A Search Autocomplete System</span
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: inline-block;
+                            overflow: hidden;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            position: relative;
+                            max-width: 100%;
+                          "
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: block;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              max-width: 100%;
+                            "
+                            ><img
+                              style="
+                                display: block;
+                                max-width: 100%;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                              "
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2716%27%20height=%2718%27/%3e" /></span
+                          ><img
+                            alt=""
+                            src="/image/intro-lock.png"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style="
+                              position: absolute;
+                              inset: 0px;
+                              box-sizing: border-box;
+                              padding: 0px;
+                              border: medium;
+                              margin: auto;
+                              display: block;
+                              width: 0px;
+                              height: 0px;
+                              min-width: 100%;
+                              max-width: 100%;
+                              min-height: 100%;
+                              max-height: 100%;
+                            "
+                        /></span>
+                      </li>
+                      <li>
+                        <span class="style_cataTitle__nzDnz"
+                          ><i>16</i>
+                          <div
+                            class="ant-divider ant-divider-vertical"
+                            role="separator"
+                          ></div>
+                          Design YouTube</span
+                        ><span class="style_freeIcon__Ala2D"
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: inline-block;
+                              overflow: hidden;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              position: relative;
+                              max-width: 100%;
+                            "
+                            ><span
+                              style="
+                                box-sizing: border-box;
+                                display: block;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                                max-width: 100%;
+                              "
+                              ><img
+                                style="
+                                  display: block;
+                                  max-width: 100%;
+                                  width: initial;
+                                  height: initial;
+                                  background: none;
+                                  opacity: 1;
+                                  border: 0px;
+                                  margin: 0px;
+                                  padding: 0px;
+                                "
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2738%27%20height=%2718%27/%3e" /></span
+                            ><img
+                              alt=""
+                              src="/image/freeicon.png"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style="
+                                position: absolute;
+                                inset: 0px;
+                                box-sizing: border-box;
+                                padding: 0px;
+                                border: medium;
+                                margin: auto;
+                                display: block;
+                                width: 0px;
+                                height: 0px;
+                                min-width: 100%;
+                                max-width: 100%;
+                                min-height: 100%;
+                                max-height: 100%;
+                              " /></span
+                        ></span>
+                      </li>
+                      <li>
+                        <span class="style_cataTitle__nzDnz"
+                          ><i>17</i>
+                          <div
+                            class="ant-divider ant-divider-vertical"
+                            role="separator"
+                          ></div>
+                          Design Google Drive</span
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: inline-block;
+                            overflow: hidden;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            position: relative;
+                            max-width: 100%;
+                          "
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: block;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              max-width: 100%;
+                            "
+                            ><img
+                              style="
+                                display: block;
+                                max-width: 100%;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                              "
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2716%27%20height=%2718%27/%3e" /></span
+                          ><img
+                            alt=""
+                            src="/image/intro-lock.png"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style="
+                              position: absolute;
+                              inset: 0px;
+                              box-sizing: border-box;
+                              padding: 0px;
+                              border: medium;
+                              margin: auto;
+                              display: block;
+                              width: 0px;
+                              height: 0px;
+                              min-width: 100%;
+                              max-width: 100%;
+                              min-height: 100%;
+                              max-height: 100%;
+                            "
+                        /></span>
+                      </li>
+                      <li>
+                        <span class="style_cataTitle__nzDnz"
+                          ><i>18</i>
+                          <div
+                            class="ant-divider ant-divider-vertical"
+                            role="separator"
+                          ></div>
+                          Proximity Service</span
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: inline-block;
+                            overflow: hidden;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            position: relative;
+                            max-width: 100%;
+                          "
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: block;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              max-width: 100%;
+                            "
+                            ><img
+                              style="
+                                display: block;
+                                max-width: 100%;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                              "
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2716%27%20height=%2718%27/%3e" /></span
+                          ><img
+                            alt=""
+                            src="/image/intro-lock.png"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style="
+                              position: absolute;
+                              inset: 0px;
+                              box-sizing: border-box;
+                              padding: 0px;
+                              border: medium;
+                              margin: auto;
+                              display: block;
+                              width: 0px;
+                              height: 0px;
+                              min-width: 100%;
+                              max-width: 100%;
+                              min-height: 100%;
+                              max-height: 100%;
+                            "
+                        /></span>
+                      </li>
+                      <li>
+                        <span class="style_cataTitle__nzDnz"
+                          ><i>19</i>
+                          <div
+                            class="ant-divider ant-divider-vertical"
+                            role="separator"
+                          ></div>
+                          Nearby Friends</span
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: inline-block;
+                            overflow: hidden;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            position: relative;
+                            max-width: 100%;
+                          "
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: block;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              max-width: 100%;
+                            "
+                            ><img
+                              style="
+                                display: block;
+                                max-width: 100%;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                              "
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2716%27%20height=%2718%27/%3e" /></span
+                          ><img
+                            alt=""
+                            src="/image/intro-lock.png"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style="
+                              position: absolute;
+                              inset: 0px;
+                              box-sizing: border-box;
+                              padding: 0px;
+                              border: medium;
+                              margin: auto;
+                              display: block;
+                              width: 0px;
+                              height: 0px;
+                              min-width: 100%;
+                              max-width: 100%;
+                              min-height: 100%;
+                              max-height: 100%;
+                            "
+                        /></span>
+                      </li>
+                      <li>
+                        <span class="style_cataTitle__nzDnz"
+                          ><i>20</i>
+                          <div
+                            class="ant-divider ant-divider-vertical"
+                            role="separator"
+                          ></div>
+                          Google Maps</span
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: inline-block;
+                            overflow: hidden;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            position: relative;
+                            max-width: 100%;
+                          "
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: block;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              max-width: 100%;
+                            "
+                            ><img
+                              style="
+                                display: block;
+                                max-width: 100%;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                              "
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2716%27%20height=%2718%27/%3e" /></span
+                          ><img
+                            alt=""
+                            src="/image/intro-lock.png"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style="
+                              position: absolute;
+                              inset: 0px;
+                              box-sizing: border-box;
+                              padding: 0px;
+                              border: medium;
+                              margin: auto;
+                              display: block;
+                              width: 0px;
+                              height: 0px;
+                              min-width: 100%;
+                              max-width: 100%;
+                              min-height: 100%;
+                              max-height: 100%;
+                            "
+                        /></span>
+                      </li>
+                      <li>
+                        <span class="style_cataTitle__nzDnz"
+                          ><i>21</i>
+                          <div
+                            class="ant-divider ant-divider-vertical"
+                            role="separator"
+                          ></div>
+                          Distributed Message Queue</span
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: inline-block;
+                            overflow: hidden;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            position: relative;
+                            max-width: 100%;
+                          "
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: block;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              max-width: 100%;
+                            "
+                            ><img
+                              style="
+                                display: block;
+                                max-width: 100%;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                              "
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2716%27%20height=%2718%27/%3e" /></span
+                          ><img
+                            alt=""
+                            src="/image/intro-lock.png"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style="
+                              position: absolute;
+                              inset: 0px;
+                              box-sizing: border-box;
+                              padding: 0px;
+                              border: medium;
+                              margin: auto;
+                              display: block;
+                              width: 0px;
+                              height: 0px;
+                              min-width: 100%;
+                              max-width: 100%;
+                              min-height: 100%;
+                              max-height: 100%;
+                            "
+                        /></span>
+                      </li>
+                      <li>
+                        <span class="style_cataTitle__nzDnz"
+                          ><i>22</i>
+                          <div
+                            class="ant-divider ant-divider-vertical"
+                            role="separator"
+                          ></div>
+                          Metrics Monitoring and Alerting System</span
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: inline-block;
+                            overflow: hidden;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            position: relative;
+                            max-width: 100%;
+                          "
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: block;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              max-width: 100%;
+                            "
+                            ><img
+                              style="
+                                display: block;
+                                max-width: 100%;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                              "
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2716%27%20height=%2718%27/%3e" /></span
+                          ><img
+                            alt=""
+                            src="/image/intro-lock.png"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style="
+                              position: absolute;
+                              inset: 0px;
+                              box-sizing: border-box;
+                              padding: 0px;
+                              border: medium;
+                              margin: auto;
+                              display: block;
+                              width: 0px;
+                              height: 0px;
+                              min-width: 100%;
+                              max-width: 100%;
+                              min-height: 100%;
+                              max-height: 100%;
+                            "
+                        /></span>
+                      </li>
+                      <li>
+                        <span class="style_cataTitle__nzDnz"
+                          ><i>23</i>
+                          <div
+                            class="ant-divider ant-divider-vertical"
+                            role="separator"
+                          ></div>
+                          Ad Click Event Aggregation</span
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: inline-block;
+                            overflow: hidden;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            position: relative;
+                            max-width: 100%;
+                          "
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: block;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              max-width: 100%;
+                            "
+                            ><img
+                              style="
+                                display: block;
+                                max-width: 100%;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                              "
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2716%27%20height=%2718%27/%3e" /></span
+                          ><img
+                            alt=""
+                            src="/image/intro-lock.png"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style="
+                              position: absolute;
+                              inset: 0px;
+                              box-sizing: border-box;
+                              padding: 0px;
+                              border: medium;
+                              margin: auto;
+                              display: block;
+                              width: 0px;
+                              height: 0px;
+                              min-width: 100%;
+                              max-width: 100%;
+                              min-height: 100%;
+                              max-height: 100%;
+                            "
+                        /></span>
+                      </li>
+                      <li>
+                        <span class="style_cataTitle__nzDnz"
+                          ><i>24</i>
+                          <div
+                            class="ant-divider ant-divider-vertical"
+                            role="separator"
+                          ></div>
+                          Hotel Reservation System</span
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: inline-block;
+                            overflow: hidden;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            position: relative;
+                            max-width: 100%;
+                          "
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: block;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              max-width: 100%;
+                            "
+                            ><img
+                              style="
+                                display: block;
+                                max-width: 100%;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                              "
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2716%27%20height=%2718%27/%3e" /></span
+                          ><img
+                            alt=""
+                            src="/image/intro-lock.png"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style="
+                              position: absolute;
+                              inset: 0px;
+                              box-sizing: border-box;
+                              padding: 0px;
+                              border: medium;
+                              margin: auto;
+                              display: block;
+                              width: 0px;
+                              height: 0px;
+                              min-width: 100%;
+                              max-width: 100%;
+                              min-height: 100%;
+                              max-height: 100%;
+                            "
+                        /></span>
+                      </li>
+                      <li>
+                        <span class="style_cataTitle__nzDnz"
+                          ><i>25</i>
+                          <div
+                            class="ant-divider ant-divider-vertical"
+                            role="separator"
+                          ></div>
+                          Distributed Email Service</span
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: inline-block;
+                            overflow: hidden;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            position: relative;
+                            max-width: 100%;
+                          "
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: block;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              max-width: 100%;
+                            "
+                            ><img
+                              style="
+                                display: block;
+                                max-width: 100%;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                              "
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2716%27%20height=%2718%27/%3e" /></span
+                          ><img
+                            alt=""
+                            src="/image/intro-lock.png"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style="
+                              position: absolute;
+                              inset: 0px;
+                              box-sizing: border-box;
+                              padding: 0px;
+                              border: medium;
+                              margin: auto;
+                              display: block;
+                              width: 0px;
+                              height: 0px;
+                              min-width: 100%;
+                              max-width: 100%;
+                              min-height: 100%;
+                              max-height: 100%;
+                            "
+                        /></span>
+                      </li>
+                      <li>
+                        <span class="style_cataTitle__nzDnz"
+                          ><i>26</i>
+                          <div
+                            class="ant-divider ant-divider-vertical"
+                            role="separator"
+                          ></div>
+                          S3-like Object Storage</span
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: inline-block;
+                            overflow: hidden;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            position: relative;
+                            max-width: 100%;
+                          "
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: block;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              max-width: 100%;
+                            "
+                            ><img
+                              style="
+                                display: block;
+                                max-width: 100%;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                              "
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2716%27%20height=%2718%27/%3e" /></span
+                          ><img
+                            alt=""
+                            src="/image/intro-lock.png"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style="
+                              position: absolute;
+                              inset: 0px;
+                              box-sizing: border-box;
+                              padding: 0px;
+                              border: medium;
+                              margin: auto;
+                              display: block;
+                              width: 0px;
+                              height: 0px;
+                              min-width: 100%;
+                              max-width: 100%;
+                              min-height: 100%;
+                              max-height: 100%;
+                            "
+                        /></span>
+                      </li>
+                      <li>
+                        <span class="style_cataTitle__nzDnz"
+                          ><i>27</i>
+                          <div
+                            class="ant-divider ant-divider-vertical"
+                            role="separator"
+                          ></div>
+                          Real-time Gaming Leaderboard</span
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: inline-block;
+                            overflow: hidden;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            position: relative;
+                            max-width: 100%;
+                          "
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: block;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              max-width: 100%;
+                            "
+                            ><img
+                              style="
+                                display: block;
+                                max-width: 100%;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                              "
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2716%27%20height=%2718%27/%3e" /></span
+                          ><img
+                            alt=""
+                            src="/image/intro-lock.png"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style="
+                              position: absolute;
+                              inset: 0px;
+                              box-sizing: border-box;
+                              padding: 0px;
+                              border: medium;
+                              margin: auto;
+                              display: block;
+                              width: 0px;
+                              height: 0px;
+                              min-width: 100%;
+                              max-width: 100%;
+                              min-height: 100%;
+                              max-height: 100%;
+                            "
+                        /></span>
+                      </li>
+                      <li>
+                        <span class="style_cataTitle__nzDnz"
+                          ><i>28</i>
+                          <div
+                            class="ant-divider ant-divider-vertical"
+                            role="separator"
+                          ></div>
+                          Payment System</span
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: inline-block;
+                            overflow: hidden;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            position: relative;
+                            max-width: 100%;
+                          "
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: block;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              max-width: 100%;
+                            "
+                            ><img
+                              style="
+                                display: block;
+                                max-width: 100%;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                              "
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2716%27%20height=%2718%27/%3e" /></span
+                          ><img
+                            alt=""
+                            src="/image/intro-lock.png"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style="
+                              position: absolute;
+                              inset: 0px;
+                              box-sizing: border-box;
+                              padding: 0px;
+                              border: medium;
+                              margin: auto;
+                              display: block;
+                              width: 0px;
+                              height: 0px;
+                              min-width: 100%;
+                              max-width: 100%;
+                              min-height: 100%;
+                              max-height: 100%;
+                            "
+                        /></span>
+                      </li>
+                      <li>
+                        <span class="style_cataTitle__nzDnz"
+                          ><i>29</i>
+                          <div
+                            class="ant-divider ant-divider-vertical"
+                            role="separator"
+                          ></div>
+                          Digital Wallet</span
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: inline-block;
+                            overflow: hidden;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            position: relative;
+                            max-width: 100%;
+                          "
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: block;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              max-width: 100%;
+                            "
+                            ><img
+                              style="
+                                display: block;
+                                max-width: 100%;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                              "
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2716%27%20height=%2718%27/%3e" /></span
+                          ><img
+                            alt=""
+                            src="/image/intro-lock.png"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style="
+                              position: absolute;
+                              inset: 0px;
+                              box-sizing: border-box;
+                              padding: 0px;
+                              border: medium;
+                              margin: auto;
+                              display: block;
+                              width: 0px;
+                              height: 0px;
+                              min-width: 100%;
+                              max-width: 100%;
+                              min-height: 100%;
+                              max-height: 100%;
+                            "
+                        /></span>
+                      </li>
+                      <li>
+                        <span class="style_cataTitle__nzDnz"
+                          ><i>30</i>
+                          <div
+                            class="ant-divider ant-divider-vertical"
+                            role="separator"
+                          ></div>
+                          Stock Exchange</span
+                        ><span
+                          style="
+                            box-sizing: border-box;
+                            display: inline-block;
+                            overflow: hidden;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            position: relative;
+                            max-width: 100%;
+                          "
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: block;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              max-width: 100%;
+                            "
+                            ><img
+                              style="
+                                display: block;
+                                max-width: 100%;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                              "
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2716%27%20height=%2718%27/%3e" /></span
+                          ><img
+                            alt=""
+                            src="/image/intro-lock.png"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style="
+                              position: absolute;
+                              inset: 0px;
+                              box-sizing: border-box;
+                              padding: 0px;
+                              border: medium;
+                              margin: auto;
+                              display: block;
+                              width: 0px;
+                              height: 0px;
+                              min-width: 100%;
+                              max-width: 100%;
+                              min-height: 100%;
+                              max-height: 100%;
+                            "
+                        /></span>
+                      </li>
+                      <li>
+                        <span class="style_cataTitle__nzDnz"
+                          ><i>31</i>
+                          <div
+                            class="ant-divider ant-divider-vertical"
+                            role="separator"
+                          ></div>
+                          The Learning Continues</span
+                        ><span class="style_freeIcon__Ala2D"
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: inline-block;
+                              overflow: hidden;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              position: relative;
+                              max-width: 100%;
+                            "
+                            ><span
+                              style="
+                                box-sizing: border-box;
+                                display: block;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                                max-width: 100%;
+                              "
+                              ><img
+                                style="
+                                  display: block;
+                                  max-width: 100%;
+                                  width: initial;
+                                  height: initial;
+                                  background: none;
+                                  opacity: 1;
+                                  border: 0px;
+                                  margin: 0px;
+                                  padding: 0px;
+                                "
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2738%27%20height=%2718%27/%3e" /></span
+                            ><img
+                              alt=""
+                              src="/image/freeicon.png"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style="
+                                position: absolute;
+                                inset: 0px;
+                                box-sizing: border-box;
+                                padding: 0px;
+                                border: medium;
+                                margin: auto;
+                                display: block;
+                                width: 0px;
+                                height: 0px;
+                                min-width: 100%;
+                                max-width: 100%;
+                                min-height: 100%;
+                                max-height: 100%;
+                              " /></span
+                        ></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="style_introRight__21oEi">
+                  <div class="style_priceCard__tvvhQ">
+                    <div class="style_price__Z_E_Z">
+                      <div class="style_left__ClBX9">
+                        <h3>
+                          <span
+                            style="
+                              box-sizing: border-box;
+                              display: inline-block;
+                              overflow: hidden;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              position: relative;
+                              max-width: 100%;
+                            "
+                            ><span
+                              style="
+                                box-sizing: border-box;
+                                display: block;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                                max-width: 100%;
+                              "
+                              ><img
+                                style="
+                                  display: block;
+                                  max-width: 100%;
+                                  width: initial;
+                                  height: initial;
+                                  background: none;
+                                  opacity: 1;
+                                  border: 0px;
+                                  margin: 0px;
+                                  padding: 0px;
+                                "
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2715%27%20height=%2721%27/%3e" /></span
+                            ><img
+                              src="/image/intro-logo.png"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style="
+                                position: absolute;
+                                inset: 0px;
+                                box-sizing: border-box;
+                                padding: 0px;
+                                border: medium;
+                                margin: auto;
+                                display: block;
+                                width: 0px;
+                                height: 0px;
+                                min-width: 100%;
+                                max-width: 100%;
+                                min-height: 100%;
+                                max-height: 100%;
+                              " /></span
+                          ><span style="margin-left: 8px">Annual Pass</span>
+                        </h3>
+                      </div>
+                      <div class="style_right__3hJ0r">
+                        <strong></strong><span>per year</span>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      class="ant-btn ant-btn-default style_previewBtn__fiRzg"
+                    >
+                      <span>PREVIEW</span></button
+                    ><button
+                      type="button"
+                      class="ant-btn ant-btn-default style_purchaseBtn__TRFLB"
+                    >
+                      <span>PURCHASE</span>
+                    </button>
+                  </div>
+                  <h2>Instructors</h2>
+                  <div class="style_author__vWyn8">
+                    <header>
+                      <div class="style_profile__XJ_Hc">
+                        <span
+                          style="
+                            box-sizing: border-box;
+                            display: inline-block;
+                            overflow: hidden;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            position: relative;
+                            max-width: 100%;
+                          "
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: block;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              max-width: 100%;
+                            "
+                            ><img
+                              style="
+                                display: block;
+                                max-width: 100%;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                              "
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2764%27%20height=%2764%27/%3e" /></span
+                          ><img
+                            alt=""
+                            src="/image/team-member-1.png"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style="
+                              position: absolute;
+                              inset: 0px;
+                              box-sizing: border-box;
+                              padding: 0px;
+                              border: medium;
+                              margin: auto;
+                              display: block;
+                              width: 0px;
+                              height: 0px;
+                              min-width: 100%;
+                              max-width: 100%;
+                              min-height: 100%;
+                              max-height: 100%;
+                            "
+                        /></span>
+                      </div>
+                      <div>
+                        <strong>Alex Xu</strong
+                        ><span>Founder of ByteByteGo, Ex-Twitter</span>
+                      </div>
+                    </header>
+                    <p>
+                      Alex Xu is the CEO and founder of ByteByteGo. His book,
+                      System Design Interview - An Insider’s Guide, is an Amazon
+                      bestseller, which has been translated into six languages.
+                      He has worked at Twitter, Apple, and Zynga.
+                    </p>
+                  </div>
+                  <div class="style_author__vWyn8">
+                    <header>
+                      <div class="style_profile__XJ_Hc">
+                        <span
+                          style="
+                            box-sizing: border-box;
+                            display: inline-block;
+                            overflow: hidden;
+                            width: initial;
+                            height: initial;
+                            background: none;
+                            opacity: 1;
+                            border: 0px;
+                            margin: 0px;
+                            padding: 0px;
+                            position: relative;
+                            max-width: 100%;
+                          "
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: block;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              max-width: 100%;
+                            "
+                            ><img
+                              style="
+                                display: block;
+                                max-width: 100%;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                              "
+                              alt=""
+                              aria-hidden="true"
+                              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2764%27%20height=%2764%27/%3e" /></span
+                          ><img
+                            alt=""
+                            src="/image/team-member-2.png"
+                            decoding="async"
+                            data-nimg="intrinsic"
+                            style="
+                              position: absolute;
+                              inset: 0px;
+                              box-sizing: border-box;
+                              padding: 0px;
+                              border: medium;
+                              margin: auto;
+                              display: block;
+                              width: 0px;
+                              height: 0px;
+                              min-width: 100%;
+                              max-width: 100%;
+                              min-height: 100%;
+                              max-height: 100%;
+                            "
+                        /></span>
+                      </div>
+                      <div>
+                        <strong>Sahn Lam</strong
+                        ><span>Staff Engineer at Discord</span>
+                      </div>
+                    </header>
+                    <p>
+                      Sahn Lam is a software engineer with decades of experience
+                      in building scalable systems at high-growth companies like
+                      Discord, Zynga, and NetApp. He has designed, built,
+                      operated, and optimized many interesting distributed
+                      systems used by millions of users.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <footer class="style_footer__XgZu3 style_footerSimple__Ti_p7">
+                <div class="style_content__5xZtx">
+                  <div class="style_contact__at6Ro">
+                    <div class="style_btnGroup__42wvt">
+                      <button type="button" class="ant-btn ant-btn-default">
+                        <a href="/become-a-contributor"
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: inline-block;
+                              overflow: hidden;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              position: relative;
+                              max-width: 100%;
+                            "
+                            ><span
+                              style="
+                                box-sizing: border-box;
+                                display: block;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                                max-width: 100%;
+                              "
+                              ><img
+                                style="
+                                  display: block;
+                                  max-width: 100%;
+                                  width: initial;
+                                  height: initial;
+                                  background: none;
+                                  opacity: 1;
+                                  border: 0px;
+                                  margin: 0px;
+                                  padding: 0px;
+                                "
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2723%27%20height=%2724%27/%3e" /></span
+                            ><img
+                              alt=""
+                              src="/image/footer-icon-1.png"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style="
+                                position: absolute;
+                                inset: 0px;
+                                box-sizing: border-box;
+                                padding: 0px;
+                                border: medium;
+                                margin: auto;
+                                display: block;
+                                width: 0px;
+                                height: 0px;
+                                min-width: 100%;
+                                max-width: 100%;
+                                min-height: 100%;
+                                max-height: 100%;
+                              " /></span
+                          ><span>Become a Contributor</span></a
+                        ></button
+                      ><button type="button" class="ant-btn ant-btn-default">
+                        <a href="/be-an-affiliate"
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: inline-block;
+                              overflow: hidden;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              position: relative;
+                              max-width: 100%;
+                            "
+                            ><span
+                              style="
+                                box-sizing: border-box;
+                                display: block;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                                max-width: 100%;
+                              "
+                              ><img
+                                style="
+                                  display: block;
+                                  max-width: 100%;
+                                  width: initial;
+                                  height: initial;
+                                  background: none;
+                                  opacity: 1;
+                                  border: 0px;
+                                  margin: 0px;
+                                  padding: 0px;
+                                "
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2723%27%20height=%2724%27/%3e" /></span
+                            ><img
+                              alt=""
+                              src="/image/footer-icon-2.png"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style="
+                                position: absolute;
+                                inset: 0px;
+                                box-sizing: border-box;
+                                padding: 0px;
+                                border: medium;
+                                margin: auto;
+                                display: block;
+                                width: 0px;
+                                height: 0px;
+                                min-width: 100%;
+                                max-width: 100%;
+                                min-height: 100%;
+                                max-height: 100%;
+                              " /></span
+                          ><span>Be an affiliate</span></a
+                        ></button
+                      ><button type="button" class="ant-btn ant-btn-default">
+                        <a
+                          href="https://docs.google.com/forms/d/e/1FAIpQLSdLjwKkoERKaEe0jtWL1tWVhjEojsemjCrBNPBUo6KwO-VR4A/viewform"
+                          target="_blank"
+                          rel="noreferrer"
+                          ><span
+                            style="
+                              box-sizing: border-box;
+                              display: inline-block;
+                              overflow: hidden;
+                              width: initial;
+                              height: initial;
+                              background: none;
+                              opacity: 1;
+                              border: 0px;
+                              margin: 0px;
+                              padding: 0px;
+                              position: relative;
+                              max-width: 100%;
+                            "
+                            ><span
+                              style="
+                                box-sizing: border-box;
+                                display: block;
+                                width: initial;
+                                height: initial;
+                                background: none;
+                                opacity: 1;
+                                border: 0px;
+                                margin: 0px;
+                                padding: 0px;
+                                max-width: 100%;
+                              "
+                              ><img
+                                style="
+                                  display: block;
+                                  max-width: 100%;
+                                  width: initial;
+                                  height: initial;
+                                  background: none;
+                                  opacity: 1;
+                                  border: 0px;
+                                  margin: 0px;
+                                  padding: 0px;
+                                "
+                                alt=""
+                                aria-hidden="true"
+                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2723%27%20height=%2724%27/%3e" /></span
+                            ><img
+                              alt=""
+                              src="/image/footer-icon-3.png"
+                              decoding="async"
+                              data-nimg="intrinsic"
+                              style="
+                                position: absolute;
+                                inset: 0px;
+                                box-sizing: border-box;
+                                padding: 0px;
+                                border: medium;
+                                margin: auto;
+                                display: block;
+                                width: 0px;
+                                height: 0px;
+                                min-width: 100%;
+                                max-width: 100%;
+                                min-height: 100%;
+                                max-height: 100%;
+                              " /></span
+                          ><span style="margin-top: -3px"
+                            >Suggest a new topic</span
+                          ></a
+                        >
+                      </button>
+                    </div>
+                    <div class="style_contactList__T4tMI">
+                      <a href="/our-team">Our Team</a
+                      ><a href="/privacy-policy">Privacy Policy</a
+                      ><a href="/terms-of-service">Terms of Service</a>
+                    </div>
+                  </div>
+                  <hr />
+                  <p class="style_copyright__B_TEI">
+                    Copyright ©2023 ByteByteGo Inc. All rights reserved.
+                  </p>
+                </div>
+              </footer>
+            </div>
+          </main>
+        </section>
+      </section>
+    </div>
+  </body>
+</html>
